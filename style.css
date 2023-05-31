@@ -1,0 +1,198 @@
+*{
+  background:#F3F5FC;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+}
+.logo{
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 10%;
+}
+main{
+  display: flex;
+  margin-left: 8%;
+  margin-bottom: 20%;
+}
+.textocrudo{
+  border: none;
+  color: #0A3871;
+  text-transform: lowercase;
+  border-radius: 24px;
+  height: 400px;
+  resize: none;
+}
+.textocrudo::placeholder{color: #0A3871;
+  opacity: 0.3;    
+}
+:focus{
+  outline: none;
+}
+
+.requisitos{
+  color: #495057;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.requisitos::before{
+  content: url('https://api.iconify.design/zondicons/exclamation-solid.svg');
+  margin-right: 5px;
+}
+.botones{
+  display: flex;
+}
+.btonEncriptar{
+  border: 1px solid #0A3871;
+background: #0A3871;
+border-radius: 24px;    color: #FFFFFF;
+font-size: 16px;
+font-weight: bold;
+width: 330px;
+height: 60px;
+cursor: pointer;
+box-shadow: 5px 5px 3px 1px #0A3871;
+}
+.btonDesencriptar{
+  border: 1px solid #0A3871 ;
+  background: #D8DFE8;
+  border-radius: 24px;
+  color: #0A3871;
+  font-size: 16px;
+  font-weight: bold;
+  width: 330px;
+  cursor: pointer;
+  height: 60px;
+  margin-left: 30px;
+  box-shadow: 5px 5px 3px 1px #D8DFE8;
+}
+.mensaje{
+  max-height: 360px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  background-image: url(imagenes/Muñeco.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  border: none;
+  border-radius: 24px;
+  background-position: bottom;
+  resize: none;
+  text-align: initial;
+  box-shadow: 5px 5px 10px 5px lightgrey;
+  margin-left: 50px;
+}
+.mensaje::placeholder{
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+.copiado{
+  position: relative;
+  background:white;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 330px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 16%;
+}
+footer{
+  position: relative;
+  text-align: center;
+}
+.by{
+  font-size: 12px;
+  font-weight: bold;
+}  
+.redes{
+  width: 2%;
+}
+
+/*editan compatibilidad de pantalla para celular*/
+@media screen and (max-width:425px) {
+  * {
+     font-size: 16px;
+  }
+   
+ .logo {
+   width: 20%;
+   left: 6px;
+   top: 6px;
+   padding: 0px;
+   margin: 0px;
+ }
+   
+ main {
+   display: inline;
+   margin-left: 0px;
+ }
+ .textocrudo {
+   width: 300px;
+   height: auto;
+   text-align:center;
+   font-size: 16px;
+   font-weight: bold;
+   padding-left: 5px;
+   margin: auto;
+ } 
+ .requisitos {
+   font-size: 12px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+   
+ .botones {
+   display:block;
+   margin: auto;
+ }
+   
+ .btonEncriptar {
+   margin-bottom: 10px;
+   font-size: 12px;
+   box-shadow: none;
+   width: 300px;
+   height: 67px;
+ }
+   
+ .btonDesencriptar {
+   width: 300px;
+   height: 67px;
+   margin-left: 0;
+   margin-bottom: 10px;
+   font-size: 12px;
+   box-shadow: none;
+   background: #F3F5FC;
+ }
+   
+ .mensaje {
+  padding-top: 20%;
+  position: initial;
+   background-image: none;
+   width: 300px;
+   height: 100px;
+   margin: auto;
+  box-shadow: none;
+ }
+ .copiado {
+   width: 120px;
+   height: 67px;
+   left: 20px;
+ }
+ footer{
+  margin: 0px;
+ }
+  .by{
+    margin: auto;
+    width: 300px;
+    font-size: 8px;
+    font-weight: bold;
+  }  
+  .redes{
+    display: block;
+    margin: auto;
+    width: 5%;
+  }
+}
